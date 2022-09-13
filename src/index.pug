@@ -1,0 +1,260 @@
+- var pageTitle = 'Луч'
+
+doctype html
+html
+  head
+    title= pageTitle
+    style 
+      include styles/style.css
+      include styles/bootstrap-grid.min.css
+      include styles/bootstrap-reboot.min.css
+  body
+    include pug-modules/header
+
+    section#offer.offer 
+      .container
+        .row.align-items-center
+          .col-lg-5.offset-lg-1.col-md-6.col-12
+            h3.offer__title.upper Мы предлагаем ледовую площадку для тренировок по хоккею и занятий фигурным катанием
+            .offer__btn.btn оставить заявку
+          .col-md-6.col-12 
+            ul.offer-slider  
+              li.offer-slider__item.active
+                img(src="../images/offer/offer-slider1.png", alt="slider1").offer-slider__img
+              //- li.offer-slider__item
+              //-   img(src="../images/offer/offer-slider2.png", alt="slider2")
+
+    section#about.about 
+      .container
+        ul.row.col-lg-11.offset-lg-1.col-md-12.d-flex.flex-md-row.about-list.px-0
+          li.col-md-6.col-12.about-list__item.d-flex.justify-content-start
+            .row
+              .d-md-flex.justify-content-md-between.d-block
+                .col-5
+                  img(src="../images/about/ice.png").about-list__img
+                .col-md-7.col-12.description
+                  h3.description__title лед
+                  p.description__paragraph Размер поля 26х56. Поверхность генерируется холодильным оборудованием "Название", а в основании охлаждаемая бетонная плита, что создает гладкий, ровный лед с необходимой температурой и влажностью.
+          li.col-md-6.col-12.about-list__item.d-flex.justify-content-start
+            .row
+              .d-md-flex.justify-content-md-between.d-block
+                .col-5
+                  img(src="../images/about/ice-rink.png").about-list__img
+                .col-md-7.col-12.description
+                  h3.description__title зал
+                  p.description__paragraph Зал высотой 12,5 м оборудован высокотехнологичной приточно-вытяжной системой вентиляции и осушения воздуха. Она поддерживает температуру и влажность воздуха, а также предотвращает образования тумана. 
+          li.col-md-6.col-12.about-list__item.d-flex.justify-content-start
+            .row
+              .d-md-flex.justify-content-md-between.d-block
+                .col-5
+                  img(src="../images/about/gum.png").about-list__img
+                .col-md-7.col-12.description
+                  h3.description__title тренажерный зал
+                  p.description__paragraph Комплекс оборудован тренажерным залом  с боксерскими грушами
+          li.col-md-6.col-12.about-list__item.d-flex.justify-content-start
+            .row
+              .d-md-flex.justify-content-md-between.d-block
+                .col-5
+                  img(src="../images/about/sound.png").about-list__img
+                .col-md-7.col-12.description
+                  h3.description__title звук
+                  p.description__paragraph Для комфорта игроков во время занятий и зрителей мероприятий установлено электронное табло и светомузыкальное оборудование. 
+          li.col-md-6.col-12.about-list__item.d-flex.justify-content-start
+            .row
+              .d-md-flex.justify-content-md-between.d-block
+                .col-5
+                  img(src="../images/about/locker-room.png").about-list__img
+                .col-md-7.col-12.description
+                  h3.description__title раздевалки
+                  p.description__paragraph Раздевалки оборудованы санузлами, душевыми кабинами, приточной вентиляцией и зарядками мобильных устройств для каждого игрока.
+          li.col-md-6.col-12.about-list__item.d-flex.justify-content-start
+            .row
+              .d-md-flex.justify-content-md-between.d-block
+                .col-5
+                  img(src="../images/about/spa.png").about-list__img
+                .col-md-7.col-12.description
+                  h3.description__title зона спа
+                  p.description__paragraph СПА, бассейн и баня удобно расположены внутри комплекса.
+          li.col-md-6.col-12.about-list__item.d-flex.justify-content-start
+            .row
+              .d-md-flex.justify-content-md-between.d-block
+                .col-5
+                  img(src="../images/about/light.png").about-list__img
+                .col-md-7.col-12.description
+                  h3.description__title свет
+                  p.description__paragraph В зале установлено светодиодное оборудование для равномерного и комфортного освещения ледовой поверхности.
+          
+
+    section#opportunities
+      img(src="../images/opportunities/rec-first.png", alt="rectangle").opportunities__rec_first
+      .opportunities
+        .container
+          .row
+            .col-lg-5.offset-lg-1.col-md-6.col-sm-12
+              h2.opportunities__title возможности
+            .col-md-6.col-sm-12
+              .opportunities-list.d-flex
+                .opportunities-list__item 
+                  h4.opportunities-list__title заточка коньков
+                  img(src="../images/opportunities/skies.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title кафе
+                  img(src="../images/opportunities/drinks.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title сушилка
+                  img(src="../images/opportunities/dryer.png", alt="").opportunities-list__img
+                .opportunities-list__item 
+                  h4.opportunities-list__title проведение мероприятий
+                  img(src="../images/opportunities/sound.png", alt="").opportunities-list__img
+      img(src="../images/opportunities/rec-second.png", alt="rectangle").opportunities__rec_second
+
+    section#book.book 
+      .container
+        .book-ice  
+          h2.book-ice__title забронируйте лед
+          p.book-ice__paragraph прямо сейчас
+          a.book-ice__btn.btn оставить заявку
+
+    section#benefits.benefits  
+      .container
+        .row
+          .col-lg-11.offset-lg-1.col-md-12
+            h2.benefits__title наши преимущества
+          .col-xl-10.offset-xl-1.col-lg-12
+            .benefits-list.upper
+              .row.g-0
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title
+                      | Высокий
+                      br
+                      | потолок
+                    img(src="../images/benefits/ceiling.png", alt="ceiling").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title
+                      | Доброжелательный
+                      br 
+                      | персонал
+                    img(src="../images/benefits/staff.png", alt="staff").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title
+                      | Даем 
+                      br 
+                      | допинвентарь
+                    img(src="../images/benefits/implements.png", alt="implements").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title 
+                      | Раздевалка
+                      br 
+                      | открывается за час
+                    img(src="../images/benefits/hour.png", alt="hour").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title 
+                      | Парковка
+                      br 
+                      | рядом
+                    img(src="../images/benefits/parking.png", alt="parking").benefits-list__img
+                .col-md-2.col-sm-4.col-6.mt-4
+                  .benefits-list__item
+                    h5.benefits-list__title
+                      | Зона спа,
+                      br 
+                      | сауна
+                    img(src="../images/benefits/sauna.png", alt="sauna").benefits-list__img
+
+    section#gallery.gallery 
+      img(src="../images/gallery/gallery-rec.png", alt="gallery-rectangle").gallery__rec
+      .container  
+        .gallery-block
+          .row     
+            .col-lg-11.offset-lg-1 
+              h2.gallery__title галерея
+          .row
+            .col.d-flex.justify-content-start
+              ul.gallery__img.d-flex.justify-content-start
+                li
+                  img(src="../images/gallery/gallery-first.png", alt="first").gallery__img_first
+                  img(src="../images/gallery/gallery-second.png", alt="second").gallery__img_second
+                li
+                  img(src="../images/gallery/gallery-third.png", alt="third").gallery__img_first
+                  img(src="../images/gallery/gallery-fourth.png", alt="fourth").allery__img_second
+              
+    section#events.events 
+      .container
+        .row 
+          .col-lg-11.offset-lg-1
+            h2.events__title события  
+          .col-lg-10.offset-lg-1
+            .events-slider
+              .row 
+                .col-md-6.col
+                  .events-slider__slide.d-flex.justify-content-start
+                    .events-slider__slide_left
+                      h2.events-slider__date 12–14
+                      h4.events-slider__month апрель
+                    .events-slider__slide_right
+                      p.events-slider__text День открытых дверей
+                .col-md-6.col
+                  .events-slider__slide.d-flex.justify-content-start
+                    .events-slider__slide_left
+                      h2.events-slider__date 20–24
+                      h4.events-slider__month февраля
+                    .events-slider__slide_right
+                      p.events-slider__text Открытая тренировка
+
+    section#comment.comment
+      img(src="../images/comment/comment-rec.png", alt="rectangle").comment__rec
+      .container 
+        .row.d-flex.overflow-visible
+          .col-lg-5.offset-lg-1.col-md-6.col-sm-6.col
+            h2.comment__title Отзывы
+          .col-sm-6.col.overflow-visible
+            .comment-slider.d-flex.justify-content-start
+              .comment-slider__item
+                .comment-slider__item_top.d-flex.justify-content-between
+                  img(src="../images/comment/union.png", alt="union").comment-slider__img
+                  h4.comment-slider__name Павел К.
+                p.comment-slider__text Удобное местоположение. Быстро нашли взаимопонимание с сотрудниками. Отлично провели тренировку, площадка норм
+              .comment-slider__item
+                .comment-slider__item_top.d-flex.justify-content-between
+                  img(src="../images/comment/union.png", alt="union").comment-slider__img
+                  h4.comment-slider__name Олег В.
+                p.comment-slider__text Очень крутой лед! Много воздуха, отличные раздевалки. Все зашло. 
+      img(src="../images/comment/comment-rec2.png", alt="rectangle").comment__rec_second
+
+    section#connection.connection
+      .row.g-0.d-sm-flex.d-block.align-items-center
+        .col-lg-5.offset-lg-1.col-md-6.col-sm-6.col-12
+          h2.connection__title Контакты
+        .col-sm-6.col-12
+          h4.connection__addres Москва, Волоколамское шоссе, д. 88
+          .connection-contacts.d-lg-flex.d-md-block
+            h4.connection__phone Тел: 8 495 602 02 32
+            h4.connection__mail Почта: alkluc@mail.ru
+    img(src="../images/map/arrow.png", alt="arrow").map__arrow
+
+    section#map.map 
+      .container 
+        .map-block
+          img(src="../images/map/logo.png", alt="logo").map__logo
+      img(src="../images/map/map-rec.png", alt="rectangle").map__rec
+
+    section#ask.ask 
+      .container
+        .ask-wrap.upper
+          h5.ask__title Остались вопросы?
+          h4.ask__text Свяжитесь с нами
+          a.ask__btn.btn.popup-connect__btn Оставить заявку
+      img(src="../images/footer/footer-rec.png", alt="rec").ask__rec
+
+    include pug-modules/footer
+
+    include pug-modules/modals
+
+    include pug-modules/navbar
+
+    script(src='js/main.js', type='modules')
