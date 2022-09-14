@@ -1090,7 +1090,7 @@ body.noscroll {
 }
 
 .popup-book, .popup-connect {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
